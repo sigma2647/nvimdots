@@ -35,6 +35,10 @@ nmap('<leader>5', '<cmd>BufferLineGoToBuffer 5<CR>', opt)
 
 imap(';', '<esc>', opt)
 
-nmap('<leader><S-cr>', map_callback(
-  			_command_panel()
-      ), opt)
+nmap(
+  "<leader><S-cr>",
+  map_callback(function()
+    _command_panel()
+  end),
+  opt
+)
