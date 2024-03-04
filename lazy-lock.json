@@ -14,7 +14,7 @@
   "friendly-snippets": { "branch": "main", "commit": "5cc1f45c6aac699ad008fb85f6ae03236062667d" },
   "gitsigns.nvim": { "branch": "main", "commit": "f388995990aba04cfdc7c3ab870c33e280601109" },
   "indent-blankline.nvim": { "branch": "master", "commit": "3c8a185da4b8ab7aef487219f5e001b11d4b6aaf" },
-  "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
+  "lazy.nvim": { "branch": "main", "commit": "28126922c9b54e35a192ac415788f202c3944c9f" },
   "lualine.nvim": { "branch": "master", "commit": "2248ef254d0a1488a72041cfb45ca9caada6d994" },
   "mini.ai": { "branch": "main", "commit": "ce822c6e6fe3aaf7cb29874e669b2d96febc97e5" },
   "mini.bufremove": { "branch": "main", "commit": "8464390c932556dbb298ccf8a7587d6ef765e94f" },
@@ -22,6 +22,7 @@
   "mini.indentscope": { "branch": "main", "commit": "ff1e68b5c01426f9dfff3278dd1b10c9b5f000a1" },
   "mini.pairs": { "branch": "main", "commit": "61811b4f3e29dc4926f8418dd64aebe0013914c2" },
   "mini.surround": { "branch": "main", "commit": "21babf8f50afbb403ab1b9c2053806ccc28e40b6" },
+  "neo-tree.nvim": { "branch": "v2.x", "commit": "245cf1e68840defcc75a16297740f6203f5a045d" },
   "neoconf.nvim": { "branch": "main", "commit": "4bb77407903935551756fec6278c37121a36139d" },
   "neodev.nvim": { "branch": "main", "commit": "bbe17de89345ce40725e721d347c596dc4a02b32" },
   "noice.nvim": { "branch": "main", "commit": "bf67d70bd7265d075191e7812d8eb42b9791f737" },
@@ -44,6 +45,5 @@
   "tokyonight.nvim": { "branch": "main", "commit": "531b04704fc9ff994d8b9c0720428fdc3c7d49d1" },
   "trouble.nvim": { "branch": "main", "commit": "20469be985143d024c460d95326ebeff9971d714" },
   "vim-illuminate": { "branch": "master", "commit": "3bd2ab64b5d63b29e05691e624927e5ebbf0fb86" },
-  "which-key.nvim": { "branch": "main", "commit": "28d2bd129575b5e9ebddd88506601290bb2bb221" },
-  "window-picker": { "branch": "main", "commit": "41cfaa428577c53552200a404ae9b3a0b5719706" }
+  "which-key.nvim": { "branch": "main", "commit": "28d2bd129575b5e9ebddd88506601290bb2bb221" }
 }
