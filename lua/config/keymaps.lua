@@ -50,5 +50,10 @@ nmap("<Leader>fh", "<cmd>Telescope help_tags<CR>", opt)
 local lazyterm = function()
   require("lazyvim.util").terminal.open(nil, { cwd = require("lazyvim.util").root.get() })
 end
+
+local lazyterm = function()
+  require("lazyvim.util").terminal.open(nil, { cwd = require("lazyvim.util").root.get() })
+end
+
 nmap("<c-\\>", lazyterm, { desc = "Terminal (root dir)" })
 tmap("<C-\\>", "<cmd>close<cr>", { desc = "Hide Terminal" })
