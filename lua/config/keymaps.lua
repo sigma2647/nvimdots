@@ -13,6 +13,8 @@ local vmap = utils.vmap
 local imap = utils.imap
 local xmap = utils.xmap
 local omap = utils.omap
+local tmap = utils.tmap
+local cmap = utils.cmap
 local map_callback = bind.map_callback
 local nnoremap = utils.nnoremap
 local inoremap = utils.inoremap
@@ -24,6 +26,7 @@ nmap("H", "^", opt)
 nmap("L", "$", opt)
 nmap("Y", "y$", opt)
 nmap("D", "d$", opt)
+nmap("<c-w>", "<cmd>bd<CR>", opt)
 
 nmap("<leader>1", "<cmd>BufferLineGoToBuffer 1<CR>", opt)
 nmap("<leader>2", "<cmd>BufferLineGoToBuffer 2<CR>", opt)
@@ -37,9 +40,15 @@ imap("<c-f>", "<Right>", opt)
 nnoremap("<TAB>", "<cmd>bnext<cr>")
 nnoremap("<S-TAB>", "<cmd>bNext<cr>")
 
+cmap("<c-f>", "<Right>", opt)
 --------------------------------------------------------------------------------
 -- Leader Mappings -------------------------------------------------------------
 --------------------------------------------------------------------------------
---
---
---
+nmap("<Leader>fk", "<cmd>Telescope keymaps<CR>", opt)
+nmap("<Leader>fh", "<cmd>Telescope help_tags<CR>", opt)
+
+local lazyterm = function()
+  require("lazyvim.util").terminal.open(nil, { cwd = require("lazyvim.util").root.get() })
+end
+nmap("<c-\\>", lazyterm, { desc = "Terminal (root dir)" })
+tmap("<C-\\>", "<cmd>close<cr>", { desc = "Hide Terminal" })
