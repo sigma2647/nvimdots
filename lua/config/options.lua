@@ -8,5 +8,3 @@ local g = vim.g
 local o = vim.o
 local fn = vim.fn
 local env = vim.env
-
-opt.winbar = "%=%m %f"

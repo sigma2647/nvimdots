@@ -1,13 +1,13 @@
 require("keymap.helpers")
-local bind = require("keymap.bind")
+local bind = require("config.keymap.bind")
 local map_cr = bind.map_cr
 -- local map_cu = bind.map_cu
 -- local map_cmd = bind.map_cmd
 -- local map_callback = bind.map_callback
 
 local plug_map = {
-	-- Package manager: lazy.nvim
-	-- ["n|<leader>px"] = map_cr("Lazy clean"):with_silent():with_noremap():with_nowait():with_desc("package: Clean"),
+  -- Package manager: lazy.nvim
+  -- ["n|<leader>px"] = map_cr("Lazy clean"):with_silent():with_noremap():with_nowait():with_desc("package: Clean"),
 }
 
 bind.nvim_load_mapping(plug_map)
@@ -22,5 +22,5 @@ bind.nvim_load_mapping(plug_map)
 -- User keymaps
 local ok, mappings = pcall(require, "user.keymap.init")
 if ok then
-	require("modules.utils.keymap").replace(mappings)
+  require("modules.utils.keymap").replace(mappings)
 end

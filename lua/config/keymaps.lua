@@ -4,10 +4,9 @@
 --
 --
 --
-local opt = {noremap = true, silent = true }
+local opt = { noremap = true, silent = true }
 local bind = require("config.keymap.bind")
 local utils = require("config.utils")
-
 
 local nmap = utils.nmap
 local vmap = utils.vmap
@@ -19,26 +18,27 @@ local nnoremap = utils.nnoremap
 local inoremap = utils.inoremap
 local vnoremap = utils.vnoremap
 
-nmap('Q','<cmd>q<CR>',opt)
-nmap('S','<cmd>w<CR>',opt)
-nmap('H', '^', opt)
-nmap('L', '$', opt)
-nmap('Y', 'y$', opt)
-nmap('D', 'd$', opt)
+nmap("Q", "<cmd>q<CR>", opt)
+nmap("S", "<cmd>w<CR>", opt)
+nmap("H", "^", opt)
+nmap("L", "$", opt)
+nmap("Y", "y$", opt)
+nmap("D", "d$", opt)
 
+nmap("<leader>1", "<cmd>BufferLineGoToBuffer 1<CR>", opt)
+nmap("<leader>2", "<cmd>BufferLineGoToBuffer 2<CR>", opt)
+nmap("<leader>3", "<cmd>BufferLineGoToBuffer 3<CR>", opt)
+nmap("<leader>4", "<cmd>BufferLineGoToBuffer 4<CR>", opt)
+nmap("<leader>5", "<cmd>BufferLineGoToBuffer 5<CR>", opt)
 
-nmap('<leader>1', '<cmd>BufferLineGoToBuffer 1<CR>', opt)
-nmap('<leader>2', '<cmd>BufferLineGoToBuffer 2<CR>', opt)
-nmap('<leader>3', '<cmd>BufferLineGoToBuffer 3<CR>', opt)
-nmap('<leader>4', '<cmd>BufferLineGoToBuffer 4<CR>', opt)
-nmap('<leader>5', '<cmd>BufferLineGoToBuffer 5<CR>', opt)
+imap(";", "<esc>", opt)
 
-imap(';', '<esc>', opt)
+nnoremap("<TAB>", "<cmd>bnext<cr>")
+nnoremap("<S-TAB>", "<cmd>bNext<cr>")
 
-nmap(
-  "<leader><S-cr>",
-  map_callback(function()
-    _command_panel()
-  end),
-  opt
-)
+--------------------------------------------------------------------------------
+-- Leader Mappings -------------------------------------------------------------
+--------------------------------------------------------------------------------
+--
+--
+--
