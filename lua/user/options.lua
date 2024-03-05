@@ -1,7 +1,6 @@
 local options = {
 	-- Example
 	-- fillchars="eob: "               -- hide ~ if it's empty line
-	winbar = "%=%m %f",
 	whichwrap = "b,s,<,>,[,],h,l",
 	mouse = "a",
 	termguicolors = true, -- hi
