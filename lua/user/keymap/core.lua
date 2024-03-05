@@ -21,8 +21,8 @@ return {
 	["n|L"] = map_cmd("$"),
 	["n|H"] = map_cmd("^"),
 	-- -- ["n|S"] = map_cr("w"),
-	["n|S"] = map_cmd(":w<CR>"),
-	["n|Q"] = map_cmd(":q<CR>"),
+	["n|S"] = map_cr("w"),
+	["n|Q"] = map_cr("q"),
 
 	-- Visual
 	["v|J"] = map_cmd(":m '>+1<cr>gv=gv"),
