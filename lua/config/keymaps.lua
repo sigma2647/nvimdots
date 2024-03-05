@@ -32,6 +32,7 @@ nmap("<leader>4", "<cmd>BufferLineGoToBuffer 4<CR>", opt)
 nmap("<leader>5", "<cmd>BufferLineGoToBuffer 5<CR>", opt)
 
 imap(";", "<esc>", opt)
+imap("<c-f>", "<Right>", opt)
 
 nnoremap("<TAB>", "<cmd>bnext<cr>")
 nnoremap("<S-TAB>", "<cmd>bNext<cr>")
