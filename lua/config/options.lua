@@ -10,7 +10,7 @@ local fn = vim.fn
 local env = vim.env
 
 opt.wildmenu = true
-
+g.tmux_navigator_no_mappings = 1
 opt.wildignorecase = true -- wildignorecase
 
 local settings = {

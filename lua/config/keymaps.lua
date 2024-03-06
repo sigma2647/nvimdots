@@ -50,10 +50,17 @@ nmap("<Leader>fh", "<cmd>Telescope help_tags<CR>", opt)
 local lazyterm = function()
   require("lazyvim.util").terminal.open(nil, { cwd = require("lazyvim.util").root.get() })
 end
-
 local lazyterm = function()
-  require("lazyvim.util").terminal.open(nil, { cwd = require("lazyvim.util").root.get() })
+  require("lazyvim.util").terminal.open(nil, { cwd = vim.fn.expand("%:p:h") })
 end
 
 nmap("<c-\\>", lazyterm, { desc = "Terminal (root dir)" })
 tmap("<C-\\>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+
+-- ┌────────────────┐
+-- │ tmux-navigator │
+-- └────────────────┘
+nmap("<C-h>", "<cmd>TmuxNavigateLeft<cr>", opt)
+nmap("<C-l>", "<cmd>TmuxNavigateRight<cr>", opt)
+nmap("<C-k>", "<cmd>TmuxNavigateUp<cr>", opt)
+nmap("<C-j>", "<cmd>TmuxNavigateDown<cr>", opt)
