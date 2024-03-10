@@ -1,8 +1,9 @@
 return {
   "L3MON4D3/LuaSnip",
+  dependencies = { "rafamadriz/friendly-snippets" },
 
   config = function()
-    vim.o.runtimepath = vim.o.runtimepath .. "," .. os.getenv("HOME") .. "/.config/nvim/my-snippets/,"
+    vim.o.runtimepath = vim.o.runtimepath .. "," .. os.getenv("HOME") .. "/.config/nvim/snippets/,"
     require("luasnip").config.set_config({
       history = true,
       updateevents = "TextChanged,TextChangedI",
